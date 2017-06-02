@@ -1,0 +1,6 @@
+<center> 
+<h1><FONT COLOR="#306EFF">Welcome to <b><a href="http://www.drashti.net">www.drashti.net</a></b></FONT></h1> 
+<h2>Your webhosting is ready. This is your <FONT COLOR="#306EFF"> index.html </FONT> Page </h2> 
+<h2>Please replace this when you upload your website</h2> 
+</center>     
+                            

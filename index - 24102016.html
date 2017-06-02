@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Shree Adhya Shakti Mataji Temple</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/Carousel.css" rel="stylesheet">
+    <link href="css/Owl.demo.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-77537094-1', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <style>
+        imgBanner {
+            max-height: 99% !important;
+            max-width: 99% !important;
+        }
+    </style>
+    <script type="text/javascript">
+        var picPaths = ['wpimages/ganesha.jpg','wpimages/img13.jpg','wpimages/hanuman.jpg',
+                        'wpimages/img14.jpg','wpimages/img2.jpg','wpimages/img5.jpg',
+                        'wpimages/img6.jpg','wpimages/img7.jpg','wpimages/img9.jpg'];
+        var curPic = -1;
+        //preload the images for smooth animation
+        var imgO = new Array();
+        for(i=0; i < picPaths.length; i++) {
+            imgO[i] = new Image();
+            imgO[i].src = picPaths[i];
+        }
+
+        function swapImage() {
+            curPic = (++curPic > picPaths.length-1)? 0 : curPic;
+            
+            if (imgO[curPic].width >= (window.innerWidth - 10)){
+                imgO[curPic].style.width = 'auto';
+                console(imgO[curPic].style.width);
+            }
+            imgCont.src = imgO[curPic].src;
+            
+            setTimeout(swapImage,2500);
+        }
+
+        window.onload=function() {
+            imgCont = document.getElementById('imgBanner');
+            swapImage();
+        }
+    </script>    
+</head>
+
+<body data-spy="scroll" data-offset="80" id="page-top">
+    <!----------------------------------Nav Bar-------------------------------------------------------------->
+       <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">     
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <img id="img1" class="navbar-brand img" src="wpimages/img1.jpg" href="wpimages/img1.jpg"/>
+                <a class="navbar-brand page-scroll" href="#page-top">Shree Adhya Shakti Mataji Temple</a>            
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a class="page-scroll" href="index.html">Home</a></li>
+                    <li><a class="page-scroll" href="aboutmataji.html">About Mataji</a></li>                    
+                    <li><a class="page-scroll" href="aboutTemple.html">About Temple</a></li>          
+                    <li><a class="page-scroll" href="aarti.html">Aartis</a></li>
+                    <li><a class="page-scroll" href="PriestServices.html">Priest Services</a></li>
+                    <li><a class="page-scroll" href="events.html">News & Events</a></li>
+                    <li><a class="page-scroll" href="gallery.html">Gallery</a></li>
+                    <li><a class="page-scroll" href="horoscope.html">Horoscope</a></li>                    
+                    <li><a class="page-scroll" href="donation.html">Donations</a></li>
+                    <li><a class="page-scroll" href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>     
+           
+        <marquee class="marquee-header" style="color:red"> Keep in touch with our Temple via other Social Media site - Facebook: <a href="https://www.facebook.com/adhyashakti.mataji" target="_blank">"Adhyashakti Mataji"</a>, Twitter: <a href="https://twitter.com/Matajitempleuk" target="_blank">@matajitempleUK</a>, Blog: <a href="http://www.adhyashaktimatajitemple.wordpress.com" target="_blank"> adhyashaktimatajitemple.wordpress.com</a>
+        </marquee>           
+        <!-- /.container-fluid -->
+    </nav>
+    <!------------------------------------- home pictures -------------------------------------------->    
+    <section id="home1" class="secPad" style="margin-top: 20px;">
+        <div class="container">    
+            <div class="wow animated fadeInUp" data-wow-duration="700ms" data-wow-delay="300ms">            
+                <!-- Heading -->
+                <div style="margin-left:0px; margin-top:20px;background:#efc0dd;">
+                    <table style="margin-bottom: 35px;">
+                        <td style="max-width: 99%; overflow: auto; padding-left: 0px;">
+                            <img id="imgBanner" src="" alt="" />
+                        </td>
+                        <td style="max-width: 99%; overflow: auto; padding-left: 40px;">
+                                <b style="font-size: 20px;">Shree Adhya Shakti Mataji Temple<br></b><br>
+                                <b><u>Timings : </u></b>
+                                <ul type="circle">
+                                    <li style="margin-top: 10px;">The Temple is open everyday from 08:00 AM to 06:30 PM</li>
+                                    <li>Arti at 12:00 noon and 6:00 PM everyday.</li>
+                                </ul>
+                                <p>&nbsp;</p>
+                                <b><u>Temple Address:</u></b>
+                                <ul type="none">
+                                    <li style="margin-top: 10px;">Adhya Shakti Mataji Temple</li>
+                                    <li>55, High Street, Cowley, Uxbridge</li>
+                                    <li>Middlesex UB8 2DZ</li>
+                                    <li><b>Mobile : 078 8225 3540</b></li>
+                                </ul>
+                                <b><u>Registered Charity Address:</u></b>
+                                <ul type="none">
+                                    <li style="margin-top: 7px;">Navratri Garba (Registered Charity No 1089024)</li>
+                                </ul>                                
+                            <p style="margin-top: 30px;">Please refer <b><u><a href="donation.html">Donations</a></u></b> page and our <b><u><a href="wpdocs/Fund_Raising_Appeal.pdf"  target="_blank">Fund Raising Appeal </a></u></b>for more detail.</p>
+                        </td>
+                    </table>
+                </div>
+            </div>        
+        </div>
+	</section>    
+<!-- FOOTER STARTS
+===============================================================================================-->    
+<footer>
+    <div class="clearfix footer_element">
+        <div>&copy; Shree Adhya Shakti Mataji Temple. All Rights Reserved. Registered Charity No. 1089024
+        </div>    
+    </div>
+</footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
+
+</body>
+
+</html>
